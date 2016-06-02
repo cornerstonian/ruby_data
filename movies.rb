@@ -45,6 +45,6 @@ puts low_budget
 puts "==================================================================="
 
 dicaprio_flix  = movies.select do |movie|
-      movie[:stars].include?("Leonardo DiCaprio")  == true
+      movie[:stars].include?("Leonardo DiCaprio")
     end
 puts dicaprio_flix
