@@ -36,11 +36,15 @@ movies << {
 # Create an array of movies with budgets less than 100
 # Create an array of movies that have Leonardo DiCaprio as a star
 
-
 low_budget  = movies.select do |movie|
-
-      puts movie[:budget] < 100
       movie[:budget] < 100
 end
 
 puts low_budget
+
+puts "==================================================================="
+
+dicaprio_flix  = movies.select do |movie|
+      movie[:stars].include?("Leonardo DiCaprio")  == true
+    end
+puts dicaprio_flix
